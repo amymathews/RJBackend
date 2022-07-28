@@ -1,0 +1,24 @@
+
+{
+    "name": "codecov/codecov-php",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/codecov/codecov-php",
+    "description": "demo repo",
+    "keywords": ["code coverage", "codecov", "coverage reports"],
+    "authors": [
+        {
+            "name": "codecov.io",
+            "email": "hello@codecov.io"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Example": "src/"
+        }
+    },
+    "post-install-cmd": [
+        "php artisan clear-compiled",
+        "chmod -R 777 public/"
+    ]
+}
